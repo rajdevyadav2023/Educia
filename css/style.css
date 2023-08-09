@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* header style starts here  */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d3c5f;
+    height: 10vh;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo-box {
+    text-align: center;
+    color: #fff;
+}
+
+
+header .sm-nav {
+    display: none;
+}
+
+header .big-nav li {
+    display: inline-block;
+}
+
+.big-nav li a {
+    text-decoration: none;
+    margin-left: .5rem;
+    color: #fff;
+    padding: .3rem;
+    border-radius: 5px;
+}
+
+.big-nav li a:hover {
+    background-color: #eee;
+    color: #1d3c5f;
+}
+
+.big-nav li a.active {
+    background-color: #eee;
+    color: #1d3c5f;
+}
+
+.spacer {
+    margin-top: 11vh;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.spacer p{
+    width: 30%;
+    text-align: center;
+}
+.spacer #date{
+    text-align: start;
+}
+.spacer #time{
+    text-align: end;
+}
+/* styling to the footer section  */
+footer{
+    background-color: #304f72;
+}
+.ftr-top {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3rem 1rem;
+    color: #eee;
+}
+
+.ftr-cnt-box {
+    width: 22%;
+    min-width: 300px;
+    margin: 1rem auto;
+
+    & h2 {
+        padding: .5rem 0;
+    }
+
+    & li,
+    p,
+    a {
+        color: #ddd;
+        margin-top: .5rem;
+        text-decoration: none;
+    }
+
+    & a:hover {
+        color: #aaa;
+    }
+}
+
+.ftr-bottom {
+    text-align: center;
+    padding: 3rem;
+    background-color: #1d3c5f;
+    color: white;
+}
+.cntc{
+    list-style: none;
+}
+.cntc i{
+    margin-right: .5rem;
+}
+/* //////////////////////////////////////////////  */
+@media (min-width:320px) and (max-width:700px) {
+    header .big-nav {
+        display: none;
+
+    }
+
+    header .sm-nav {
+        display: block;
+        width: 50%;
+        position: relative;
+    }
+
+    .sm-nav button {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #ddd;
+        border: none;
+        outline: none;
+        color: #555;
+        font-size: 18px;
+        cursor: pointer;
+        transition: all .5s ease;
+    }
+
+    .sm-nav button:hover {
+        background-color: #ccc;
+    }
+
+    .sm-nav .btn-group {
+        text-align: end;
+    }
+
+    .sm-nav #sm-nav-content {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 1rem;
+    }
+
+    #sm-nav-content li {
+        list-style: none;
+        margin-top: .5rem;
+        background-color: #f1f1f1;
+        transition: all .5s ease;
+    }
+
+    #sm-nav-content li:hover {
+        background-color: #1d3c5f;
+    }
+
+
+
+    #sm-nav-content a {
+        text-decoration: none;
+        color: #777;
+        display: block;
+        width: 100%;
+        transition: all .5s ease;
+        padding: .3rem;
+        
+
+    }
+    #sm-nav-content a:hover, #sm-nav-content a.active{
+        color: #fff;
+        background-color: #1d3c5f;
+    }
+
+    .spacer{
+        padding: 1rem .5rem;
+    }
+    #show-btn{
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+}

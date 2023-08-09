@@ -1,0 +1,86 @@
+.text-section {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-content {
+    text-align: center;
+}
+
+.section-content h1 {
+    font-size: 4rem;
+    color: #304f72;
+}
+
+.section-content h2 {
+    font-size: 2rem;
+    color: #555;
+}
+
+.section-content p{
+    width: 80%;
+    margin: 1rem auto;
+    text-align: justify;
+}
+
+.facilities {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    flex-wrap: wrap;
+    background-color: #304f72;
+    border-radius: .5rem 10rem;
+margin: 1rem;
+}
+
+.facility {
+    width: 25%;
+    min-width: 300px;
+    text-align: center;
+    margin: 2rem auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    transition: all .5s ease;
+}
+
+.facility:hover {
+    box-shadow: 0px 0px 15px #ccc;
+}
+
+.facility .icon-box i {
+    font-size: 3rem;
+    margin-top: .5rem;
+}
+
+.facility i,
+.facility h3 {
+    color: #fff;
+}
+
+.facility p {
+    margin-top: .5rem;
+    color: #ddd;
+
+}
+
+.facility button {
+    padding: .5rem 3rem;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all .5s ease;
+    color: #ddd;
+}
+
+.facility button:hover {
+    background-color: #fff;
+    color: #304f72;
+}

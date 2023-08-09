@@ -1,0 +1,28 @@
+.banner{
+    height: 60vh;
+    width: 100%;
+}
+.banner-01{
+    background-image: url('../images/banner-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-02{
+    background-image: url('../images/banner-02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-03{
+    background-image: url('../images/banner-03.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner-04{
+    background-image: url('../images/banner-04.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
